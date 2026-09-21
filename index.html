@@ -3,144 +3,102 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A research-backed ideal customer profile and stakeholder map for commercial-fleet incident video.">
-  <title>Fleet Evidence ICP | CS4803 Group 6</title>
+  <meta name="description" content="Ideal Customer Profile and Key Stakeholders for commercial-fleet incident video.">
+  <title>Ideal Customer Profile | CS4803 Group 6</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="CS4803 Group 6 home"><span class="brand-dot"></span><span>Dashcam → Claims</span></a>
-    <nav aria-label="Page sections"><a href="#profile">Profile</a><a href="#journey">Journey</a><a href="#evidence">Evidence</a><a href="#stakeholders">Stakeholders</a><a href="#references">References</a></nav>
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Group 6 · ICP</span></a>
+    <nav aria-label="Page sections"><a href="#icp">Customer</a><a href="#why">Why fleets</a><a href="#stakeholders">Stakeholders</a><a href="#mission">Mission</a><a href="#sources">Sources</a></nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
-      <img class="hero-photo" src="assets/fleet-safety-manager.jpg" alt="Illustration of a fleet safety manager reviewing road footage at a desk, with commercial trucks outside.">
-      <div class="hero-shade"></div>
       <div class="hero-copy">
-        <p class="kicker">Ideal customer profile · Fall 2026</p>
-        <h1>Meet the person who gets the call <em>after a crash.</em></h1>
-        <p class="hero-lede">Our first customer is not “the transportation industry.” It is a commercial fleet’s safety and risk team: the people who must find the right video, explain where it came from, and get it to the claims team while it can still help.</p>
-        <div class="hero-meta"><span>Initial segment: U.S. commercial fleets</span><span>Status: research hypothesis</span></div>
+        <p class="eyebrow">CS 4803 · Fall 2026</p>
+        <h1>Ideal Customer Profile <span>and Key Stakeholders</span></h1>
+        <p class="working-concept">Working concept: preserving and transferring commercial-fleet incident video so the people handling a claim can find, understand, and assess it. We are testing whether this is a recurring, costly problem; an API or other product is not yet a decision.</p>
+        <p class="source-note">Main narrative reproduced from the team’s revised ICP and Stakeholders document.</p>
         <p class="print-url">Interactive version: <a href="https://ittenthepenguin.github.io/CS4803-ICP-Infographic/">ittenthepenguin.github.io/CS4803-ICP-Infographic</a></p>
       </div>
-      <p class="image-note">Illustrative image generated for this project; it does not depict an interview participant.</p>
-    </section>
-
-    <section class="truth-strip" aria-label="Research status">
-      <div><strong>What we know</strong><span>Major camera vendors expose retrieval APIs, but their timing, clip rules, and quotas differ.</span></div>
-      <div><strong>What we infer</strong><span>Those differences may create extra work when video moves into a claim.</span></div>
-      <div><strong>What we still need to hear</strong><span>Who loses time or money, how often it happens, and who would pay to change it.</span></div>
-    </section>
-
-    <section class="section cream" id="profile">
-      <div class="section-head">
-        <div><p class="kicker blue">01 / The customer</p><h2>A fleet with cameras, a real safety function, and something at stake.</h2></div>
-        <p class="section-intro">Because this is a business-to-business customer, the useful “demographics” are firmographics: what the organization looks like, how it works, and who owns the problem.</p>
-      </div>
-      <div class="persona-layout">
-        <aside class="persona-poster">
-          <div class="persona-image"><img src="assets/dashcam-fleet.jpg" alt="Illustration of a road-facing dashcam mounted inside a commercial truck."></div>
-          <p class="tiny-label">Composite persona · Not a real interviewee</p>
-          <h3>Morgan, Director of Fleet Safety</h3>
-          <p class="persona-quote">“Show me exactly what happened, where the file came from, and whether the claims team can use it.”</p>
-          <div class="persona-facts"><p><span>Works at</span> A multi-state commercial fleet</p><p><span>Owns</span> Safety policy, incident response, loss trends</p><p><span>Uses</span> Telematics portal, email, shared drives, insurer or TPA portal</p><p><span>Reports to</span> Operations, risk, legal, or finance leadership</p></div>
-        </aside>
-        <div class="profile-details">
-          <article class="profile-panel"><p class="panel-code">A / Firmographics</p><h3>Who qualifies?</h3><ul><li>U.S.-based fleet operating across one or more states</li><li>Trucking, delivery, field service, utility, rental, or another road-intensive business</li><li>Enough vehicles and claim activity to support a named safety or risk owner</li><li>Dashcams or video telematics already installed</li><li>A repeatable process for reporting incidents to an insurer or TPA</li></ul><p class="annotation">A working screening range is 100–2,500 vehicles, but structure matters more than a hard vehicle count. Interviews must refine this range.</p></article>
-          <article class="profile-panel"><p class="panel-code red">B / Psychographics</p><h3>What do we expect to matter?</h3><ul><li><strong>Evidence first.</strong> They want a defensible account, not a flashy dashboard.</li><li><strong>Pragmatic about technology.</strong> They will use another tool only if it removes work from an existing incident process.</li><li><strong>Protective of drivers.</strong> Video can support fair fault decisions, but inward-facing cameras and audio create trust concerns.</li><li><strong>Alert to tail risk.</strong> One severe claim can matter more than many routine incidents.</li></ul><p class="annotation">These are beliefs to test in interviews, not findings about every fleet safety leader.</p></article>
-          <article class="profile-panel"><p class="panel-code gold">C / Behaviors</p><h3>What do they do today?</h3><ul><li>Review alerts and reconstruct the time around an incident</li><li>Request a clip from the camera platform, sometimes after the vehicle reconnects</li><li>Match video with vehicle, driver, time, GPS, and other records</li><li>Send evidence through email, links, portals, or a claim system</li><li>Answer follow-up questions from adjusters, counsel, and internal leaders</li></ul><p class="annotation">The first two behaviors are technically plausible from vendor documentation; the complete sequence still needs to be observed in interviews (Motive, 2026; Samsara, n.d.).</p></article>
-          <article class="profile-panel pain-panel"><p class="panel-code white">D / Jobs, pains, and gains</p><div class="jpg-grid"><div><h3>Job to be done</h3><p>Get the right evidence to the right decision-maker before it is lost, separated from its context, or questioned.</p></div><div><h3>Pains to test</h3><p>Offline vehicles, narrow recall windows, missing context, repeated uploads, uncertain custody, and incompatible intake rules.</p></div><div><h3>Desired gain</h3><p>A faster, calmer incident response in which the original clip and its history travel together.</p></div></div></article>
-        </div>
+      <div class="hero-art" role="img" aria-label="A simple illustration of a commercial truck sending an incident-evidence package toward a claim file.">
+        <div class="sun"></div>
+        <div class="hills hill-back"></div>
+        <div class="hills hill-front"></div>
+        <div class="road"><span></span><span></span><span></span></div>
+        <div class="truck"><span class="truck-cab"></span><span class="truck-box"></span><i class="wheel wheel-one"></i><i class="wheel wheel-two"></i><b class="camera-dot"></b></div>
+        <div class="signal signal-one"></div><div class="signal signal-two"></div><div class="signal signal-three"></div>
+        <div class="evidence-file"><span class="file-tab"></span><b>INCIDENT</b><small>video + context</small><i></i><i></i></div>
       </div>
     </section>
 
-    <section class="section white" id="journey">
-      <div class="section-head compact"><div><p class="kicker red">02 / Current journey</p><h2>The camera records the event. Morgan has to make it useful.</h2></div><p class="section-intro">This journey is a testable model assembled from public documentation. It is not presented as an observed customer workflow.</p></div>
-      <div class="journey-grid" role="list">
-        <article class="journey-step" role="listitem"><span class="step-num">01</span><div class="step-visual crash" aria-hidden="true"><span></span></div><h3>A crash or dispute occurs</h3><p>The safety team learns about the event and determines what evidence may exist.</p><b>Question:</b><small>Who starts the process, and how soon?</small></article>
-        <article class="journey-step" role="listitem"><span class="step-num">02</span><div class="step-visual camera" aria-hidden="true"><span></span></div><h3>Someone recalls the clip</h3><p>Retrieval may be asynchronous, limited by camera availability, clip duration, or quota (Motive, 2026; Samsara, n.d.).</p><b>Question:</b><small>How often is needed footage late or unavailable?</small></article>
-        <article class="journey-step" role="listitem"><span class="step-num">03</span><div class="step-visual package" aria-hidden="true"><span></span></div><h3>The team rebuilds context</h3><p>Video must be matched with time, vehicle, driver, location, and incident records.</p><b>Question:</b><small>Which context travels with the file?</small></article>
-        <article class="journey-step" role="listitem"><span class="step-num">04</span><div class="step-visual send" aria-hidden="true"><span></span></div><h3>Evidence crosses organizations</h3><p>A fleet sends it to an insurer, TPA, adjuster, or lawyer using whatever route that recipient accepts.</p><b>Question:</b><small>Where does re-entry or follow-up begin?</small></article>
-        <article class="journey-step" role="listitem"><span class="step-num">05</span><div class="step-visual verdict" aria-hidden="true"><span></span></div><h3>The recipient decides what to trust</h3><p>Authentication can depend on the process, system, and a qualified person—not software alone (Federal Judicial Center, 2017; Legal Information Institute, n.d.-a).</p><b>Question:</b><small>What makes the evidence usable?</small></article>
+    <section class="prompt-band" aria-label="Discovery mindset">
+      <p><span>Our posture</span> We are learning from the people closest to the incident—not assuming the product before the problem.</p>
+      <a href="#mission">See the assumptions <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="chapter chapter-cream" id="icp">
+      <div class="chapter-heading"><p class="chapter-number">01</p><div><p class="eyebrow eyebrow-blue">The starting point</p><h2>1. Initial Ideal Customer Profile</h2></div></div>
+      <div class="prose-grid">
+        <p>Our initial customer hypothesis is a U.S. commercial fleet with a centralized safety or risk function, dashcams already in use, and a recurring need to provide incident evidence to an insurer or third-party administrator (TPA). This is an organizational profile, not a claim that all fleets share the same pain. We will screen for a named safety/risk owner, multiple vehicles, an existing camera or telematics provider, and a documented path for reporting incidents.</p>
+        <p>The proposed economic buyer is a director or vice president responsible for fleet risk, safety, or claims outcomes. A safety analyst or claims coordinator may retrieve footage and assemble the incident package. Fleet IT and security may approve access to camera data. These roles are hypotheses to verify, especially whether the fleet, insurer, or TPA actually pays for improvements.</p>
+      </div>
+      <div class="test-strip">
+        <div><p class="eyebrow eyebrow-coral">Motivations and behavior to test</p><p>We expect this segment to value timely incident handling, reliable evidence, driver fairness, and predictable risk costs. We do not yet know how strongly any of these motives shape purchasing. In interviews, we will ask for the most recent incident, who requested footage, how it was retrieved and shared, what information accompanied it, and what happened if a clip was late or unavailable.</p></div>
+        <div class="question-bubble" aria-hidden="true"><span>?</span><small>Tell us about<br>the last incident.</small></div>
+      </div>
+      <p class="single-prose">Existing tools matter. <a href="https://developer-docs.gomotive.com/reference/create-a-video-recall-request">Motive documents an asynchronous video-recall API with clip limits and request quotas</a> (Motive API). <a href="https://docs.guidewire.com/cloud/cc/202507/cloudapibf/cloudAPI/topics/141-Framework/02_documents/c_documents.html">Guidewire describes claim-related media as documents and provides document endpoints</a> (Guidewire documentation). These sources show technical routes exist; they do not show how often a real fleet or TPA has a painful handoff. That frequency is the central discovery question.</p>
+    </section>
+
+    <section class="chapter chapter-blue" id="why">
+      <div class="chapter-heading"><p class="chapter-number">02</p><div><p class="eyebrow eyebrow-light">Choosing who to learn from first</p><h2>2. Why Start With Fleets?</h2></div></div>
+      <div class="why-layout">
+        <div class="route-illustration" aria-hidden="true"><div class="fleet-node"><span>FLEET</span></div><div class="route-line route-a"></div><div class="route-line route-b"></div><div class="route-dot dot-a"></div><div class="route-dot dot-b"></div><div class="claims-node"><span>CLAIMS</span></div></div>
+        <div class="light-prose"><p>A fleet controls the incident response and the source of its camera footage, so its safety/risk team can recount concrete retrieval and sharing episodes. That makes it a practical first interview segment for a small student team. TPAs remain a comparison segment because they receive the evidence and may bear more of the processing cost. We are not assuming a fleet has the budget or authority to buy software; interviews must establish who experiences the loss, who approves a change, and whether existing tools suffice.</p><p>There is a specific but limited policy signal: Louisiana requires qualifying commercial-auto insurers to offer an actuarially justified liability-premium discount for vehicles with a qualifying dashboard camera and telematics system (Louisiana statute). This is a state-specific incentive, not a camera mandate or proof that video transfer is broken. It strengthens the case for asking fleets how camera data affects their insurance relationship.</p><a class="citation-rail" href="https://legis.la.gov/legis/Law.aspx?d=1430936">Open the Louisiana statute source</a></div>
       </div>
     </section>
 
-    <section class="section ink" id="evidence">
-      <div class="section-head compact"><div><p class="kicker coral">03 / Research evidence</p><h2>What the desk research changes.</h2></div><p class="section-intro light">The opportunity is not “getting video out of a camera.” That capability already exists. The open question is whether the trip between systems damages speed, context, or trust.</p></div>
-      <div class="evidence-grid">
-        <article><span class="evidence-no">01</span><h3>Retrieval exists, but it is vendor-specific.</h3><p>Samsara describes an asynchronous request that waits for an offline device to reconnect and enforces monthly retrieval quotas. Motive limits regular recalls to one, two, or three minutes, limits smart-dashcam recalls to one minute, and rate-limits the endpoint. Lytx also publishes a Video API (Lytx, 2026; Motive, 2026; Samsara, n.d.).</p><p class="takeaway"><strong>Meaning for the ICP:</strong> Morgan’s problem, if it exists, begins after choosing the right vendor workflow—not because APIs are absent.</p></article>
-        <article><span class="evidence-no">02</span><h3>The claims side is not empty territory.</h3><p>Guidewire treats claim media as “documents” and exposes document endpoints. Verisk already sells tools for detecting manipulation, duplication, and reuse in claim images and documents (Guidewire, 2024; Verisk, 2024).</p><p class="takeaway"><strong>Meaning for the ICP:</strong> a new venture has to complement or outperform products already inside the claim workflow.</p></article>
-        <article><span class="evidence-no">03</span><h3>Provenance has a standard, but standards do not create demand.</h3><p>C2PA’s Content Credentials can bind tamper-evident provenance to media. Federal evidence rules also allow certain electronic records and copies to be authenticated by a qualified person’s certification. Neither fact proves that fleets or claims teams will pay for a new product (Coalition for Content Provenance and Authenticity [C2PA], 2026; Federal Judicial Center, 2017).</p><p class="takeaway"><strong>Meaning for the ICP:</strong> ask counsel and claims teams what record they actually need.</p></article>
-        <article><span class="evidence-no">04</span><h3>Policy creates pressure, not proof.</h3><p>Louisiana now requires qualifying commercial-auto insurers to offer an actuarially justified liability-premium discount for vehicles with an eligible dashcam and telematics system. The law rewards verified camera use; it does not mandate cameras or prove a broken evidence process (Louisiana State Legislature, 2025).</p><p class="takeaway"><strong>Meaning for the ICP:</strong> insurance incentives may help fleets care, but interviews must connect the incentive to workflow pain.</p></article>
-      </div>
-      <div class="evidence-warning"><strong>Important correction from the original draft:</strong> there is no defensible basis here for a $4.8B market claim, 180–260% ROI, a universal 24-hour video-retention rule, or the statement that insurers refuse to renew fleets without dashcams. Those claims are excluded.</div>
-    </section>
-
-    <section class="section cream" id="focus">
-      <div class="section-head"><div><p class="kicker blue">04 / Why start with fleets?</p><h2>The best first segment is the one we can learn from—and possibly serve.</h2></div><p class="section-intro">TPAs may eventually feel more volume, but commercial fleets are a stronger starting point for customer discovery. They hold the source data, can recount a specific incident, and are easier for a student team to reach. Commercial auto also remained an unfavorable insurance line in 2025, with loss severity pressured by social inflation and third-party litigation financing (AM Best, 2026).</p></div>
-      <div class="comparison" role="table" aria-label="Comparison of fleet safety teams and TPA claims organizations">
-        <div class="compare-row compare-head" role="row"><div role="columnheader">Decision factor</div><div role="columnheader">Fleet safety / risk team</div><div role="columnheader">TPA / insurer claims team</div></div>
-        <div class="compare-row" role="row"><div role="cell"><strong>Access to the story</strong></div><div role="cell">Owns the camera relationship and can replay a specific incident.</div><div role="cell">Sees incoming evidence, but may speak at a policy level rather than about retrieval.</div></div>
-        <div class="compare-row" role="row"><div role="cell"><strong>Problem exposure</strong></div><div role="cell">Feels driver, deductible, loss-run, and litigation consequences.</div><div role="cell">May process more claims and absorb more intake work.</div></div>
-        <div class="compare-row" role="row"><div role="cell"><strong>Buying path</strong></div><div role="cell">A safety or risk leader may be able to sponsor a focused pilot.</div><div role="cell">Core-system changes can require procurement, security review, and partner approval.</div></div>
-        <div class="compare-row" role="row"><div role="cell"><strong>Competitive crowding</strong></div><div role="cell">Less crowded at the moment of capture and preservation.</div><div role="cell">Existing claims platforms, forensics products, and partner programs already operate here.</div></div>
-        <div class="compare-row verdict-row" role="row"><div role="cell"><strong>Our decision</strong></div><div role="cell"><b>Initial ICP</b><br>Interview first; test willingness and ownership.</div><div role="cell"><b>Design partner and comparison segment</b><br>Must accept the evidence even if it does not buy the product.</div></div>
-      </div>
-      <p class="caution">This is a research decision, not a market-validation claim. The decisive interview question is simple: <em>Who absorbs the cost when useful video arrives late, incomplete, or without enough context?</em></p>
-    </section>
-
-    <section class="section white" id="stakeholders">
-      <div class="section-head compact"><div><p class="kicker red">05 / Stakeholder map</p><h2>One customer. Five groups that can change the outcome.</h2></div><p class="section-intro">Select a stakeholder in the map. Each group has a different interest, level of influence, and reason to support—or stop—a future solution.</p></div>
-      <div class="stakeholder-layout">
-        <div class="stakeholder-map" aria-label="Stakeholder influence and interest matrix">
-          <span class="axis-y">Influence ↑</span><span class="axis-x">Interest in changing the workflow →</span>
-          <span class="quad-label q1">Manage closely</span><span class="quad-label q2">Keep satisfied</span><span class="quad-label q3">Keep informed</span><span class="quad-label q4">Monitor</span>
-          <button type="button" class="map-point p-buyer is-active" data-target="buyer"><span>1</span>Fleet buyer</button>
-          <button type="button" class="map-point p-claims" data-target="claims"><span>2</span>Claims team</button>
-          <button type="button" class="map-point p-platform" data-target="platform"><span>3</span>Platforms</button>
-          <button type="button" class="map-point p-legal" data-target="legal"><span>4</span>Counsel / SIU</button>
-          <button type="button" class="map-point p-driver" data-target="driver"><span>5</span>Drivers / labor</button>
-        </div>
-        <div class="stakeholder-detail">
-          <article id="buyer" class="stakeholder-card is-active" tabindex="-1"><p class="stakeholder-count">01 / Economic buyer</p><h3>VP or Director of Fleet Risk / Safety</h3><dl><div><dt>Interest</dt><dd>Loss outcomes, premium and deductible exposure, driver fairness, and a process the team can execute under pressure.</dd></div><div><dt>Influence</dt><dd><strong>High.</strong> Likely sponsor for a fleet-side pilot, although budget ownership remains unverified.</dd></div><div><dt>What could block adoption?</dt><dd>If the problem belongs to the insurer, or current camera tools already solve it, there is no reason to buy.</dd></div></dl></article>
-          <article id="claims" class="stakeholder-card" tabindex="-1"><p class="stakeholder-count">02 / Operator and recipient</p><h3>Adjuster or Claims Operations Lead</h3><dl><div><dt>Interest</dt><dd>Complete evidence, less re-entry, faster fault decisions, subrogation, and fewer reopened files.</dd></div><div><dt>Influence</dt><dd><strong>High.</strong> The claims team can reject a new intake path even when a fleet wants it.</dd></div><div><dt>Research question</dt><dd>Does video arrive as usable claim evidence or just another generic document?</dd></div></dl></article>
-          <article id="platform" class="stakeholder-card" tabindex="-1"><p class="stakeholder-count">03 / Technical gatekeeper</p><h3>Camera and Claims-Platform Providers</h3><dl><div><dt>Interest</dt><dd>Platform control, secure access, manageable support, and integrations that increase product value.</dd></div><div><dt>Influence</dt><dd><strong>Very high.</strong> They set authentication, quota, format, API, marketplace, and partner requirements.</dd></div><div><dt>Research question</dt><dd>Can a new layer work through existing programs, or would the platforms make it redundant?</dd></div></dl></article>
-          <article id="legal" class="stakeholder-card" tabindex="-1"><p class="stakeholder-count">04 / Requirements setter</p><h3>Defense Counsel and Special Investigations</h3><dl><div><dt>Interest</dt><dd>A clear account of origin, copying, access, and preservation that can survive challenge.</dd></div><div><dt>Influence</dt><dd><strong>High on requirements; lower on budget.</strong> Their standard may define what “trusted” must mean.</dd></div><div><dt>Legal boundary</dt><dd>Rule 902 certification addresses authentication only; relevance, hearsay, notice, and state rules still matter (Legal Information Institute, n.d.-b).</dd></div></dl></article>
-          <article id="driver" class="stakeholder-card" tabindex="-1"><p class="stakeholder-count">05 / Affected non-buyer</p><h3>Drivers and Labor Representatives</h3><dl><div><dt>Interest</dt><dd>Fair fault decisions, job security, clear camera policy, and limits on inward-facing recording.</dd></div><div><dt>Influence</dt><dd><strong>Medium.</strong> Influence concentrates around consent, workplace policy, and trust.</dd></div><div><dt>Privacy boundary</dt><dd>California Penal Code § 632 concerns confidential communications and therefore can matter to in-cab audio; it is not a blanket road-video rule (California Legislative Information, 2017).</dd></div></dl></article>
-        </div>
+    <section class="chapter chapter-cream" id="stakeholders">
+      <div class="chapter-heading"><p class="chapter-number">03</p><div><p class="eyebrow eyebrow-blue">The people around the handoff</p><h2>3. Stakeholder Map</h2></div></div>
+      <p class="section-intro">A simple map of the groups that can use, enable, constrain, or be affected by a future solution.</p>
+      <div class="stakeholder-grid">
+        <article class="stakeholder-card card-safety"><span class="card-no">01</span><h3>Fleet safety analyst and IT/security team - high influence</h3><p>The analyst is the likely daily operator; IT/security can permit or block data access. They care about effort, data handling, and fitting existing systems. We need to verify who performs each step rather than assuming one role does both.</p><div class="mini-icon icon-safety" aria-hidden="true"><i></i><i></i><i></i></div></article>
+        <article class="stakeholder-card card-claims"><span class="card-no">02</span><h3>TPA or insurer claims team - high influence</h3><p>Adjusters and claims leaders receive the evidence and decide whether it is usable in their workflow. They may be users, buyers, or blockers depending on who owns the process and budget. <a href="https://docs.guidewire.com/cloud/cc/202507/cloudapibf/cloudAPI/topics/141-Framework/02_documents/c_documents.html">Guidewire's documented claim-document API</a> and <a href="https://www.cccsecureshare.com/Developers">CCC's developer program</a> show that claims-side integrations already exist in parts of this ecosystem; neither proves that a target TPA uses them for fleet video (Guidewire documentation; CCC Secure Share).</p><div class="mini-icon icon-claims" aria-hidden="true"><i></i><i></i><i></i></div></article>
+        <article class="stakeholder-card card-platform"><span class="card-no">03</span><h3>Camera and claims-platform providers - high technical influence</h3><p>These providers control retrieval, permissions, formats, and integration terms. Their interest is use of their platforms and a manageable support burden. Their documented interfaces may enable a solution or make a new intermediary unnecessary; we must examine the actual tools customers use.</p><div class="mini-icon icon-platform" aria-hidden="true"><i></i><i></i><i></i></div></article>
+        <article class="stakeholder-card card-legal"><span class="card-no">04</span><h3>Defense counsel and fraud investigators - medium to high influence</h3><p>They may set requirements for preserving a clip's origin and history. In federal proceedings, <a href="https://www.law.cornell.edu/rules/fre/rule_902">Evidence Rule 902(13)-(14)</a> offers certification routes for certain electronic records and copies, with a qualified person's certification and notice requirements; it does not make a product's output automatically admissible (Federal Rule of Evidence 902). Their practical needs require interviews.</p><div class="mini-icon icon-legal" aria-hidden="true"><i></i><i></i><i></i></div></article>
+        <article class="stakeholder-card card-driver"><span class="card-no">05</span><h3>Drivers and labor representatives - medium influence</h3><p>Drivers are affected by recording and by decisions based on footage. Privacy, fair treatment, and job security may shape acceptance. <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&amp;sectionNum=632.">California Penal Code section 632</a> addresses recording confidential communications without all-party consent, which is relevant to some in-cab audio situations; it is not a blanket rule for road-facing video (California Penal Code section 632).</p><div class="mini-icon icon-driver" aria-hidden="true"><i></i><i></i><i></i></div></article>
       </div>
     </section>
 
-    <section class="section mission" id="opportunity">
-      <div class="mission-copy"><p class="kicker coral">06 / Mission and opportunity</p><h2>Roadside truth should arrive with its history intact.</h2><p>A crash creates information at the edge of the fleet: video, time, location, vehicle identity, and the record of who handled it. Our mission is to help that information reach a fair commercial-auto claim decision without losing its context along the way.</p><p>The stakeholder map shows why this cannot be a fleet-only product. The fleet controls the source. Platforms control access. Claims teams decide whether the package fits their work. Counsel defines what must be preserved. Drivers live with the recording policy.</p></div>
-      <div class="opportunity-box"><p class="tiny-label">The opportunity is real only if interviews show all three</p><ol><li><span>01</span>A recurring failure—not a rare annoyance</li><li><span>02</span>A person or organization that absorbs the cost</li><li><span>03</span>A useful gap that current platforms do not already close</li></ol><p class="kill-note">If customers say the footage arrives on time, current tools preserve enough context, or nobody owns the cost, we should change the problem rather than force the product.</p></div>
+    <section class="chapter chapter-night" id="mission">
+      <div class="chapter-heading"><p class="chapter-number">04</p><div><p class="eyebrow eyebrow-gold">What must be true</p><h2>4. Ranked Assumptions and Mission</h2></div></div>
+      <div class="assumptions-layout">
+        <p class="assumption-list"><span>First: needed footage or context is sometimes delayed, unavailable, or hard to transfer, with a consequence the fleet or claims team can describe from a real incident.</span> <span>Second: the problem recurs often enough that someone has tried a workaround or allocated staff time.</span> <span>Third: one identifiable organization owns the cost and can approve a better process.</span> <span>Fourth: existing camera and claims-platform tools leave a gap worth solving. Interviews may contradict any of these assumptions.</span></p>
+        <div class="mission-panel"><p class="eyebrow eyebrow-coral">Our mission</p><p>Our mission is to help commercial-auto claims be decided with timely, trustworthy incident information. The opportunity is real only if the interviews identify a recurring handoff failure, a customer who bears its cost, and an improvement that current tools do not already provide. The initial ICP and stakeholder map tell us whom to interview and whose approval or cooperation a future solution would require.</p><div class="mission-spark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div>
+      </div>
     </section>
 
-    <section class="section cream" id="references">
-      <div class="section-head compact"><div><p class="kicker blue">07 / References</p><h2>APA-style source list</h2></div><p class="section-intro">Vendor sources establish product behavior, not independent customer demand. Legal sources explain requirements, not whether a startup opportunity exists.</p></div>
-      <div class="references" aria-label="APA-style references">
-        <p>AM Best. (2026, February 23). <a href="https://news.ambest.com/newscontent.aspx?altsrc=176&refnum=272763"><em>Rate actions, investment gains drive U.S. property/casualty insurance segment’s 2025 results; headwinds may pressure carriers in 2026</em></a>.</p>
-        <p>California Legislative Information. (2017). <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=632."><em>California Penal Code § 632</em></a>.</p>
-        <p>Coalition for Content Provenance and Authenticity. (2026). <a href="https://spec.c2pa.org/specifications/specifications/2.4/specs/ContentCredentials.html"><em>Content Credentials specification (Version 2.4)</em></a>.</p>
+    <section class="chapter chapter-sources" id="sources">
+      <div class="chapter-heading"><p class="chapter-number">05</p><div><p class="eyebrow eyebrow-blue">Research trail</p><h2>Sources</h2></div></div>
+      <p class="section-intro">The revised document is the main content source. These APA-style references support the external factual statements linked above; they do not validate untested customer demand.</p>
+      <div class="reference-list">
+        <p>California Legislative Information. (2017). <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&amp;sectionNum=632."><em>California Penal Code § 632</em></a>.</p>
+        <p>CCC Intelligent Solutions. (n.d.). <a href="https://www.cccsecureshare.com/Developers"><em>App developers</em></a>. CCC Secure Share.</p>
         <p>Federal Judicial Center. (2017, December 1). <a href="https://www.fjc.gov/content/325216/amendments-federal-rules-practice-and-procedure-evidence-2017-self-authenticating"><em>Evidence 2017—Self-authenticating electronic evidence</em></a>.</p>
-        <p>Guidewire Software. (2024). <a href="https://docs.guidewire.com/cloud/cc/202411/cloudapibf/cloudAPI/topics/141-Framework/02_documents/c_documents.html"><em>ClaimCenter Cloud API Consumer Guide: Documents</em></a>.</p>
-        <p>Legal Information Institute. (n.d.-a). <a href="https://www.law.cornell.edu/rules/fre/rule_901"><em>Federal Rule of Evidence 901: Authenticating or identifying evidence</em></a>. Cornell Law School.</p>
-        <p>Legal Information Institute. (n.d.-b). <a href="https://www.law.cornell.edu/rules/fre/rule_902"><em>Federal Rule of Evidence 902: Evidence that is self-authenticating</em></a>. Cornell Law School.</p>
+        <p>Guidewire Software. (2025). <a href="https://docs.guidewire.com/cloud/cc/202507/cloudapibf/cloudAPI/topics/141-Framework/02_documents/c_documents.html"><em>ClaimCenter Cloud API Consumer Guide: Documents</em></a>.</p>
+        <p>Legal Information Institute. (n.d.). <a href="https://www.law.cornell.edu/rules/fre/rule_902"><em>Federal Rule of Evidence 902: Evidence that is self-authenticating</em></a>. Cornell Law School.</p>
         <p>Louisiana State Legislature. (2025). <a href="https://legis.la.gov/legis/Law.aspx?d=1430936"><em>La. Rev. Stat. § 22:1482.2: Premium discount for dashboard cameras with telematics</em></a>.</p>
-        <p>Lytx. (2026). <a href="https://developer.lytx.com/docs/api-reference"><em>Lytx with DriveCam API reference</em></a>.</p>
-        <p>Motive. (2026). <a href="https://developer-docs.gomotive.com/reference/create-a-video-recall-request"><em>Create a video recall request</em></a>.</p>
-        <p>Samsara. (n.d.). <a href="https://developers.samsara.com/reference/postmediaretrieval"><em>Create a media retrieval request</em></a>. Retrieved September 21, 2026.</p>
-        <p>Verisk. (2024, January 23). <a href="https://www.verisk.com/products/digital-media-forensics/"><em>Digital media forensics</em></a>.</p>
+        <p>Motive. (n.d.). <a href="https://developer-docs.gomotive.com/reference/create-a-video-recall-request"><em>Create a video recall request</em></a>. Retrieved September 21, 2026.</p>
       </div>
-      <div class="method-note"><strong>Research note.</strong> No customer interviews are represented as completed here. The persona, journey, segment choice, and stakeholder influence ratings are working hypotheses built from desk research and must be tested through the team’s discovery interviews.</div>
+      <p class="method-note"><strong>Research note.</strong> No customer interviews are represented as completed here. The customer profile, role ownership, and ranked assumptions remain hypotheses for the team to test.</p>
     </section>
   </main>
-  <footer><span>CS4803 Group 6 · Ideal Customer Profile &amp; Key Stakeholders</span><span>September 2026</span></footer>
+
+  <footer><span>CS4803 Group 6</span><span>Ideal Customer Profile and Key Stakeholders</span><span>September 2026</span></footer>
 </body>
 </html>
